@@ -1,0 +1,16 @@
+# n. of Master face Nodes (per face)
+1
+# --- Master Face Nodes ---
+# xy-plane
+0
+# xz-plane
+0
+# yz-plane
+0
+# --- Slave Face Nodes ---
+# xy-plane
+0
+# xz-plane
+0
+# yz-plane
+0
