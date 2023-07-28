@@ -1,2 +1,2 @@
-# NH-TOP-OPT_FORTRAN-
-Code used to perform a topological optimization process using numerical homogenization process
+# NH-TOPOPT-FORTRAN
+Code used for the generation of mechanical metamaterials using a topological optimization process and a numerical homogenization process.
