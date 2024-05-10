@@ -2,22 +2,25 @@
 CC = gfortran
 CFLAGS = -O1 -fbounds-check -fbacktrace -fcheck=all -g -Wall -Wextra -Wrealloc-lhs-all
 TARGET = ExecuteOptimization
-EXT = -llapack -lblas -L/opt/homebrew/Cellar/metis/5.1.0/lib -lmetis 
-FILES = FortranModules/HSLModules/sdeps90.f90 \
-		FortranModules/HSLModules/ddeps90.f90 \
-		FortranModules/HSLModules/common90.f90 \
-		FortranModules/HSLModules/hsl_ma87s.f90 \
-		FortranModules/HSLModules/hsl_ma87d.f90 \
-		FortranModules/HomogenizationModule.f90 \
-		FortranModules/TopOptimizationModule.f90 \
-		FortranModules/PostProcessingModule.f90 \
+EXT = -fopenmp -llapack -lblas -L/opt/homebrew/Cellar/metis/5.1.0/lib -lmetis
+FILES = Modules/MA87Routines/sdeps90.f90 \
+		Modules/MA87Routines/ddeps90.f90 \
+		Modules/MA87Routines/common90.f90 \
+		Modules/MA87Routines/hsl_ma87s.f90 \
+		Modules/MA87Routines/hsl_ma87d.f90 \
+		Modules/MMARoutines/MMA_Routines.f90 \
+		Modules/MMARoutines/MMA_Interface.f90 \
+		Modules/Base_Module.f90 \
+		Modules/Solver_Module.f90 \
+		Modules/HN_Module.f90 \
+		Modules/Optimization_Module.f90 \
+		Modules/Paraview_Module.f90 \
 		Main.f90
-OTHERFILES = DataStructure/AdditionalData/*.txt \
-			 ParaviewPostprocessing/*.case \
-			 ParaviewPostprocessing/*.geom \
-			 ParaviewPostprocessing/*.esca \
-			 NumericalResults/*.txt \
-			 DataStructure/AdditionalData/SparseSystem/*.txt
+OTHERFILES = DataResults/*.txt \
+			 DataResults/.InternalData/*.txt \
+			 Paraview/*.case \
+			 Paraview/*.geom \
+			 Paraview/*.esca
 
 # Object files
 OBJ1 = ${FILES:.f90=.o}
