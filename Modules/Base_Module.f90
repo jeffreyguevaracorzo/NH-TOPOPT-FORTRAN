@@ -3,20 +3,20 @@ module Base_Module
     ! Lapack and BLAS are needed in some routines/functions
     ! -------------------------------------------------------------------------------------------------!
     ! Matematical constants
-    double precision, parameter                             :: Pi = 3.14159265358979323846
-    double precision, parameter                             :: Euler = 2.71828182845904523536
-    double precision, parameter                             :: Aureo = 1.618033988749895 
-    double precision, parameter                             :: EulerMascheroni = 0.57721566490153286060
-    double precision, parameter                             :: Feigenbaum = 4.66920160910299067185
-    double precision, parameter                             :: Catalan = 0.91596559417721901505
-    double precision, parameter                             :: Apery = 1.20205690315959428539
+    double precision, parameter                             :: Pi = 3.14159265358979323846d0
+    double precision, parameter                             :: Euler = 2.71828182845904523536d0
+    double precision, parameter                             :: Aureo = 1.618033988749895d0
+    double precision, parameter                             :: EulerMascheroni = 0.57721566490153286060d0
+    double precision, parameter                             :: Feigenbaum = 4.66920160910299067185d0
+    double precision, parameter                             :: Catalan = 0.91596559417721901505d0
+    double precision, parameter                             :: Apery = 1.20205690315959428539d0
     ! Physical/Fundamental constants
-    double precision, parameter                             :: LightSpeed = 299792458.0
+    double precision, parameter                             :: LightSpeed = 299792458.0d0
     double precision, parameter                             :: GravConst = 6.674E-11
     double precision, parameter                             :: PlankConst = 6.626E-34
     double precision, parameter                             :: BoltzmannConst = 1.381E-23
     double precision, parameter                             :: AvogadroConst = 6.02214076E-23
-    double precision, parameter                             :: FaradayConst = 96485.33212
+    double precision, parameter                             :: FaradayConst = 96485.33212d0
     ! ----------------- ALL INTERFACES -----------------
     ! Algebra
     interface Inverse
